@@ -1,13 +1,13 @@
 # Package
 
-version       = "1.3.0"
-author        = "KrispPurg"
+version       = "1.3.1"
+author        = "KrispPurg, Eye Con"
 description   = "A Discord Bot & REST Library for Nim."
 license       = "MIT"
 
 # Dependencies
 
-requires "nim >= 1.2.0", "zippy >= 0.2.1", "ws <= 0.4.0", "regex >= 0.15.0", "libsodium <= 0.6.0", "flatty >= 0.1.2"
+requires "nim >= 1.6.0", "zippy >= 0.2.1", "ws <= 0.4.0", "regex >= 0.15.0", "libsodium <= 0.6.0", "flatty >= 0.1.2"
 
 task genDoc, "Generates the documentation for dimscord":
     rmDir("docs") # Clean old doc folder
