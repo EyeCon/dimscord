@@ -1,7 +1,7 @@
 # Package
 
 version       = "1.8.0"
-author        = "KrispPurg"
+author        = "KrispPurg, EyeCon"
 description   = "A Discord Bot & REST Library for Nim."
 license       = "MIT"
 
@@ -12,7 +12,7 @@ requires "opussum >= 0.6.0", "etf#e0b77f7"
 
 task genDoc, "Generates the documentation for dimscord":
     rmDir("docs") # Clean old doc folder
-    exec("nim doc2 --outdir=docs --project --index:on -d:dimscordVoice --git.url:https://github.com/krisppurg/dimscord --git.commit:master dimscord.nim")
+    exec("nim doc2 --outdir=docs --project --index:on -d:dimscordVoice --git.url:https://github.com/EyeCon/dimscord --git.commit:master dimscord.nim")
     exec("nim buildindex -o:docs/theindex.html docs/") # This builds the index to allow search to work
 
     writeFile("docs/index.html", """
